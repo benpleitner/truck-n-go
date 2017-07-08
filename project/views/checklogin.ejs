@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Lookup results</h1>
+  Entered user name: <%= username %><p>
+  Entered password: <%= password %><p>
+  <%if (result != null) { %>
+  User's actual password: <%= result %><p>
+  <% } %>
+  <%if (message != null) { %>
+  <font color="red"><%= message %><p>
+  <% } %>
+  <a href="/">Back to login</a>
+</body>
+</html>

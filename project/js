@@ -1,0 +1,14 @@
+Author: Benjamin Leitner (bleitner)
+Server running on port 8080. Now open http://localhost:8080/ in your browser!
+Connected to AWS DynamoDB
+Tables in DynamoDB: restaurants,users,words
+Connected to AWS DynamoDB
+Tables in DynamoDB: restaurants,users,words
+Connected to AWS DynamoDB
+Tables in DynamoDB: restaurants,users,words
+Found 2 indexed entries in words
+Found 3 indexed entries in users
+Found 3 indexed entries in users
+Connected to AWS DynamoDB
+Tables in DynamoDB: restaurants,users,words
+Found 1 indexed entries in restaurants

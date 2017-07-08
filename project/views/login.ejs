@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Log In</title>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <style>
+      body {
+          font-family: "Verdana",sans-serif;
+          font-weight: 300;
+          text-rendering: optimizeLegibility;
+      }
+
+      h1 {
+        font-size: 72px;
+        color: #CE0B24;
+        text-align: center;
+        padding-top: 35%;
+        padding-bottom: 100px;
+      }
+
+      .center {
+          text-align: center;
+      }
+
+      .form-control {
+      	font-size: 36px;
+      	height: 100px;
+      	margin-bottom: 50px;
+      }
+
+      p {
+      	text-align: center;
+      	padding-top: 20px;
+      	font-size: 24px;
+      }
+
+      #loginButton {
+          padding-top: 20px;
+          padding-bottom: 40px;
+      }
+
+      .btn-geckoboard {
+        display: inline-block;
+        padding: 10px 56px;
+        margin-bottom: 0;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        -webkit-transition: color 0.3s ease, background 0.3s ease;
+        -moz-transition: color 0.3s ease, background 0.3s ease;
+        -ms-transition: color 0.3s ease, background 0.3s ease;
+        -o-transition: color 0.3s ease, background 0.3s ease;
+      }
+
+      .btn-group-lg>.btn, .btn-lg {
+        padding: 10px 56px;
+        font-size: 36px;
+        line-height: 1.3333333;
+      }
+
+      .btn-outline {
+        color: white;
+        background-color: #58E2C2;
+        border-color: #58E2C2;
+      }
+
+      .btn-geckoboard:hover {
+        -webkit-transition: color 0.3s ease, background 0.3s ease;
+        -moz-transition: color 0.3s ease, background 0.3s ease;
+        -ms-transition: color 0.3s ease, background 0.3s ease;
+        -o-transition: color 0.3s ease, background 0.3s ease;
+        background-color: #58E2C2;
+        color: white;
+        text-decoration: none;
+      }
+
+      .btn-geckoboard:focus {
+          background-color: rgba(0, 0, 0, 0);
+          color: #58E2C2;
+          text-decoration: none;
+      }
+
+      #signup {
+        font-size: 32px;
+      }
+    </style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+	  		<h1>Truck n' Go</h1>
+	  	</div>
+	  	
+	  	<div class="row">
+		  <%if (message != null) { %>
+		  <p><font color="red"><%= message %></p>
+		  <% } %>
+		  <font color="black">
+		  <form action="/checklogin" method="post">
+			<input type="text" name="usernameInputField" class="form-control" placeholder="Username">
+		   	<input type="password" name="passwordInputField" class="form-control" placeholder="Password">
+		    
+<!-- 		    <div style="text-align: center; margin-top: 5px;">
+		    	<button type="submit" class="btn btn-default">Login</button>
+		    </div> -->
+			<div class="row center" id="loginButton" ng-controller="TranscriptController as tran">
+		    	<button type="submit" class="btn-geckoboard btn-outline btn-lg">Log In</button>
+        	</div>
+		  </form>
+		</div>
+		
+		<div class="row">
+			<p id="signup">Don't have an account yet? <a href="/signup">Sign up</a>!</p>
+		</div>
+  </div>
+</body>
+</html>

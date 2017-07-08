@@ -1,0 +1,78 @@
+body {
+	font-family: "Verdana",sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-size: 48px;
+	color: #CE0B24;
+	text-align: center;
+	padding-top: 35%;
+}
+
+img {
+	text-align: center;
+	max-width: 80%;
+	max-height: 80%;
+	margin-left: 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+#startButton {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.btn-geckoboard {
+  display: inline-block;
+  padding: 10px 56px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  -webkit-transition: color 0.3s ease, background 0.3s ease;
+  -moz-transition: color 0.3s ease, background 0.3s ease;
+  -ms-transition: color 0.3s ease, background 0.3s ease;
+  -o-transition: color 0.3s ease, background 0.3s ease;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: 10px 56px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+.btn-outline {
+  color: white;
+  background-color: #58E2C2;
+  border-color: #58E2C2;
+}
+
+.btn-geckoboard:hover {
+  -webkit-transition: color 0.3s ease, background 0.3s ease;
+  -moz-transition: color 0.3s ease, background 0.3s ease;
+  -ms-transition: color 0.3s ease, background 0.3s ease;
+  -o-transition: color 0.3s ease, background 0.3s ease;
+  background-color: #58E2C2;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-geckoboard:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #58E2C2;
+    text-decoration: none;
+}
